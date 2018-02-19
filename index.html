@@ -1,10 +1,50 @@
 <html>
     <body>
     <p>This window will automatically close in 3 seconds</p>
+    <script type="text/javascript" src="https://chat.botplatform.io/plugin-v2.js?bot=bot_1517396902537"></script>
+<script type="text/javascript">
+    window.botplatform.init({});
+</script>
+        <script type="text/javascript">
+        $(function(){
+        	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+		iframe = document.getElementById('ymIframeId');
+		
+	  iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
+			event: {
+				code: "Firstly",
+				data:{
+					code:getUrlParameter('code');
+					},
+					
+			}
+		})}), 'https://chat.botplatform.io');
+  })
+    </script>
     <script>
+    	
+
+
+
         var timer = setTimeout(function() {
             window.close()
         }, 3000);
+
     </script>
 </body>
 </html>
+
