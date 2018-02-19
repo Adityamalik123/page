@@ -5,33 +5,7 @@
 <script type="text/javascript">
     window.botplatform.init({});
 </script>
-        <script type="text/javascript">
-        	var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-
-		iframe = document.getElementById('ymIframeId');
-		
-	  iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
-			event: {
-				code: "Firstly",
-				data:{
-					code:getUrlParameter('code')
-					},
-					
-			}
-		})}), 'https://chat.botplatform.io')}
-    </script>
+	    <script type="text/javascript" src="https://adityamalik123.github.io/Temp123/tui.js"></script>
     <script>
     	
 
