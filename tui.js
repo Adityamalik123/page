@@ -18,7 +18,7 @@ $(document).ready(function(){
 		
 	  iframe.contentWindow.postMessage(JSON.stringify({event_code: 'ym-client-event', data: JSON.stringify({
 			event: {
-				code: "Firstly",
+				code: "login_outlook",
 				data:{
 					code:mm
 					},
